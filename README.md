@@ -25,8 +25,11 @@
 
   **강의에서 얻은 지식**
    - map과 unordered_map의 key에 의한 접근(새로운 원소 추가, 특정 key의 value 찾기, 원소 삭제, ...) 시간은 다르다
+   
       map = O(logN) :: 주로 binary search tree 사용
+      
                        binary search tree = 이진 트리로 부모노드보다 작은 값은 왼쪽 노드로, 크면 오른쪽 노드로 자식을 구성한다.
+                       
       unorderd_map = O(1)  :: hash_table 사용
    - unordered_map 순회하기
    
