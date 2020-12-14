@@ -28,10 +28,16 @@
       map = O(logN) :: 주로 binary search tree 사용
                        binary search tree = 이진 트리로 부모노드보다 작은 값은 왼쪽 노드로, 크면 오른쪽 노드로 자식을 구성한다.
       unorderd_map = O(1)  :: hash_table 사용
-   - unordered_map 순회하기 
+   - unordered_map 순회하기
+   
        for(auto i : runner){
+       
          cout << i.first << "-" << i.second << '\n';
+         
        }
+       
        **해당 문제에서는 값을 참조하고 가져오기만 하면 되기 때문에 auto i 로 작성하였으나, 값을 변경해야 하면 auto &i 로 작성하는 것이 맞다.**
+       
        **마찬가지로 participant와 completion의 선수 이름이 소문자와 대문자가 섞여 있으나 이를 고려하지 않는다면 lower를 사용할 때, auto &i로 써주어야 한다.**
+       
    - 정렬을 통해 풀이하는 방법도 있지만, 정렬을 하는 과정이 오래 걸리기 때문에 이 문제에서는 적절하지 않다.
