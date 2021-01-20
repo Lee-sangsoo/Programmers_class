@@ -1,0 +1,4 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\stack_problem\stack_problem\myanswer.cpp(20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\stack_problem\stack_problem\myanswer.cpp(22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  stack_problem.vcxproj -> C:\Users\user\Desktop\programmers_class\stack_problem\Debug\stack_problem.exe
