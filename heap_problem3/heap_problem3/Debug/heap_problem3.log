@@ -1,0 +1,5 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\heap_problem3\heap_problem3\myanswer.cpp(14): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\heap_problem3\heap_problem3\myanswer.cpp(51): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\heap_problem3\heap_problem3\myanswer.cpp(52): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  heap_problem3.vcxproj -> C:\Users\user\Desktop\programmers_class\heap_problem3\Debug\heap_problem3.exe
