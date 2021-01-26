@@ -1,0 +1,5 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\greedy_problem4\greedy_problem4\myanswer.cpp(19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\greedy_problem4\greedy_problem4\myanswer.cpp(24): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\greedy_problem4\greedy_problem4\myanswer.cpp(28): warning C4018: '>': signed 또는 unsigned가 일치하지 않습니다.
+  greedy_problem4.vcxproj -> C:\Users\user\Desktop\programmers_class\greedy_problem4\Debug\greedy_problem4.exe
