@@ -105,3 +105,11 @@
  **제공 값**
   1. N(int) : 사용하는 수
   2. number(int) : 만들어야 하는 수 
+  
+   ### BFS/DFS - 여행경로
+ **DFS, BFS**
+ DFS -> stack
+ 
+ BFS -> queue    두 방식에 차이가 조금 있다.
+ 
+ BFS의 경우 내가 아는 그 방식이지만, DFS의 경우 조금 다르다 (헷갈리면 graph_problem의 classAnswer, myAnswer 확인하자)
