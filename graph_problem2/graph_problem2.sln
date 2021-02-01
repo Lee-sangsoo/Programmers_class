@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graph_problem2", "graph_problem2\graph_problem2.vcxproj", "{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Debug|x64.ActiveCfg = Debug|x64
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Debug|x64.Build.0 = Debug|x64
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Debug|x86.ActiveCfg = Debug|Win32
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Debug|x86.Build.0 = Debug|Win32
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Release|x64.ActiveCfg = Release|x64
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Release|x64.Build.0 = Release|x64
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Release|x86.ActiveCfg = Release|Win32
+		{07D98E83-0F0F-4AE0-8451-FEFAEF15A546}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89E5C6A9-C72D-4D18-8392-4AFB98C81897}
+	EndGlobalSection
+EndGlobal
