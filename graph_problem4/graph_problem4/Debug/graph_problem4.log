@@ -1,0 +1,3 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\graph_problem4\graph_problem4\myanswer.cpp(10): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  graph_problem4.vcxproj -> C:\Users\user\Desktop\programmers_class\graph_problem4\Debug\graph_problem4.exe
