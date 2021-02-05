@@ -1,0 +1,4 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\trial_snail\trial_snail\myanswer.cpp(53): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\trial_snail\trial_snail\myanswer.cpp(54): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  trial_snail.vcxproj -> C:\Users\user\Desktop\programmers_class\trial_snail\Debug\trial_snail.exe
