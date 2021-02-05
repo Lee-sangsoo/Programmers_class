@@ -1,0 +1,4 @@
+﻿  answer.cpp
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\menu_renual\menu_renual\answer.cpp(45): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\menu_renual\menu_renual\answer.cpp(71): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  menu_renual.vcxproj -> C:\Users\user\Desktop\programmers_class\kakao_2021_blind_test\menu_renual\Debug\menu_renual.exe
