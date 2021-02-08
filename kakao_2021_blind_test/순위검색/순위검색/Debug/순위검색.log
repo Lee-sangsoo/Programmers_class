@@ -1,0 +1,6 @@
+﻿  myAnswer.cpp
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\순위검색\순위검색\myanswer.cpp(38): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\순위검색\순위검색\myanswer.cpp(41): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\순위검색\순위검색\myanswer.cpp(94): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\programmers_class\kakao_2021_blind_test\순위검색\순위검색\myanswer.cpp(97): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  순위검색.vcxproj -> C:\Users\user\Desktop\programmers_class\kakao_2021_blind_test\순위검색\Debug\순위검색.exe

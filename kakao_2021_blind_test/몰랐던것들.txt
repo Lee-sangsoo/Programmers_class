@@ -28,3 +28,88 @@
    map<> m[10]  -> map을 인덱스로 관리 가능하다
    이 문제에서 쓰임은 음식 개수에 따라 관리가 가능하다
    m[음식개수][조합] 과 같이 사용된다.
+
+=========================================================================
+- 신규 아이디 추천
+ (간단한 구현문제 - string 라이브러리 함수를 많이 알면 더 쉽다)
+ 1. strchr("string", 문자) -> string 안에 문자가 있으면 참
+	Ex) strchr("-_.", ch) -> ch가 - 나 _ 나 . 라면 참이다.
+ 
+ 2. string.clear() -> 문자열 비우기
+
+ 3. string.begin(), string.end()
+
+ 4. string.erase(위치) -> 해당 위치 문자 삭제
+
+ 5. string.pop_back() -> 가장 뒤의 문자 삭제
+
+ 6. string.substr(시작, 끝) -> 범위내의 문자열로 잘라낸 문자열 return
+
+=========================================================================
+- 순위 검색
+ (map과 "이분탐색" 문제)
+ 1. map -> "메뉴 리뉴얼" 문제와 마찬가지로 배열 사용해서 풀이 가능
+
+ 2. istringstream -> 문자열을 파싱할 때 사용하면 편한 함수
+  Ex) istringstream iss(string) 
+	이렇게 해주면 string의 값들이 space나 tap으로 파싱되어 들어간다.
+       iss >> string >> string >> ....
+	iss의 파싱된 값들이 string에 들어간다. (풀이를 보면 각 값들이 들어간다)
+
+ 3. 이 문제에서도 bitMask를 이용한다. (경우의 수 처리할 때)
+
+ 4. lower_bound(begin(), end(), target) -> 범위 안에서 target값 중 가장 작은 곳의 위치를 반환
+	(target이 존재하지 않으면 target보다 큰 수중 가장 작은 수의 위치)
+
+ 5. upper_bound(begin(), end(), target) -> 범위 안에서 target값을 초과하는 것 중 가장 작은 곳의
+	위치를 반환한다. (target이 존재하지 않으면 target보다 첫번째로 큰 값의 위치)
+  
+ 6. binary_search(begin(), end(), target) -> target의 위치 찾기 (이진 탐색)
+
+  -> 4,5,6 의 헤더 파일은 <algorithm> 이다.
+      이진 탐색을 위해서는 정렬을 필수로 해주어야 한다.
+
+ 7. lower_bound 구현
+	   int start = 0;
+	   int end = tmp.size() - 1;
+	   while(start < end){
+ 	    int mid = (start + end) / 2;
+ 	    if(tmp[mid] < target) start = mid + 1;   ★
+ 	    else end = mid;
+ 	    }
+ 	    return start;
+
+ 8. upper_bound 구현
+	   int start = 0;
+	   int end = tmp.size() - 1;
+	   while(start < end){
+ 	    int mid = (start + end) / 2;
+ 	    if(tmp[mid] <= target) start = mid + 1; ★
+ 	    else end = mid;
+ 	    }
+ 	    return start;
+
+ -> lower와 upper의 구현에 있어 차이점은 등호 하나 차이다
+
+  9. 이분 탐색
+	   int start = 0;
+	   int end = tmp.size() - 1;
+	   int mid;
+	   while(start < end){
+ 	    int mid = (start + end) / 2;
+	    if(tmp[mid] == target) return mid;
+ 	    else if(tmp[mid] < target) start = mid + 1; ★
+ 	    else end = mid - 1;
+ 	    }
+ 	    return start;  
+
+
+
+
+
+
+
+
+
+
+
