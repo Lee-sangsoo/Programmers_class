@@ -68,6 +68,8 @@
 
   -> 4,5,6 의 헤더 파일은 <algorithm> 이다.
       이진 탐색을 위해서는 정렬을 필수로 해주어야 한다.
+      4, 5, 6의 값은 iterator 형태로 return되기 때문에 위치를 얻기 위해서는
+           end() - lower_bound(...) 와 같이 해주면 된다.
 
  7. lower_bound 구현
 	   int start = 0;
