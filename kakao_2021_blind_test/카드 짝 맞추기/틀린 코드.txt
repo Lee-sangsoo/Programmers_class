@@ -1,0 +1,108 @@
+#include <iostream>
+#include <cstring>
+#include <vector>
+#include <queue>
+#include <algorithm>
+
+using namespace std;
+
+int arr[5][5];
+int dist[5][5];
+bool chk[5][5];
+int dx[12] = { -1,-2,-3,0,0,0,1,2,3,0,0,0 };
+int dy[12] = { 0,0,0,1,2,3,0,0,0,-1,-2,-3 };
+
+bool complete() {
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			if (arr[i][j] != 0) return false;
+		}
+	}
+	return true;
+}
+
+void bfs(int a, int b) {
+	memset(dist, 0, sizeof(dist));
+	memset(chk, 0, sizeof(chk));
+	int kkk = 0;
+	queue<pair<int, int>> q;
+	q.push({ a, b });
+	chk[a][b] = true;
+	while (!q.empty()) {
+		auto cur = q.front();
+		q.pop();
+		int x = cur.first, y = cur.second;
+		
+		int plus_cnt = 0;
+		for (int i = 0; i < 12; i++) {
+			if (i % 3 == 0) plus_cnt = 0;
+			int nx = x + dx[i];
+			int ny = y + dy[i];
+			if (nx < 0 || nx >= 4 || ny < 0 || ny >= 4) continue;
+			if (chk[nx][ny]) continue;
+			chk[nx][ny] = true;
+
+			if (dist[nx][ny] == 0)
+				dist[nx][ny] = dist[x][y] + 1 + plus_cnt;
+			else
+				dist[nx][ny] = min(dist[nx][ny], dist[x][y] + 1 + plus_cnt);
+
+			if (arr[nx][ny] != 0) plus_cnt++;
+
+			if(kkk == 0) q.push({ nx, ny });
+		}
+		kkk++;
+	}
+}
+
+int solution(vector<vector<int>> board, int r, int c) {
+	int answer = 0;
+
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 4; j++) {
+			arr[i][j] = board[i][j];
+			if (board[i][j] != 0) answer++;
+		}
+	}
+	
+	int x = r, y = c;
+	
+	while (!complete()) {
+		bfs(x, y);
+		int min_cnt = 500;
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (arr[i][j] == 0) continue;
+				if (min_cnt > dist[i][j]) {
+					min_cnt = dist[i][j];
+					x = i;
+					y = j;
+				}
+			}
+		}
+		answer += min_cnt; // 가장 가까운 카드로 이동 완료
+		int cur = arr[x][y]; // 현재 카드 정보
+		arr[x][y] = 0;
+		
+		bfs(x, y);
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				if (arr[i][j] == cur) {
+					answer += dist[i][j];
+					x = i;
+					y = j;
+					break;
+				}
+			}
+		}
+		arr[x][y] = 0;
+		
+	}
+
+	return answer;
+}
+
+int main() {
+	//cout << solution({ {1,1,2,2},{3,3,4,4},{5,5,6,6},{7,7,8,8} }, 0, 0);
+	cout << solution({ {1,0,0,3},{2,0,0,0},{0,0,0,2},{3,0,1,0} }, 1, 0);
+}
