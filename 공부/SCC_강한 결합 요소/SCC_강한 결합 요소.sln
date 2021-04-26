@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SCC_강한 결합 요소", "SCC_강한 결합 요소\SCC_강한 결합 요소.vcxproj", "{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Debug|x64.ActiveCfg = Debug|x64
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Debug|x64.Build.0 = Debug|x64
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Debug|x86.Build.0 = Debug|Win32
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Release|x64.ActiveCfg = Release|x64
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Release|x64.Build.0 = Release|x64
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Release|x86.ActiveCfg = Release|Win32
+		{CD7C020F-2383-4BB0-90C1-8C35B8E94E74}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEBEB0BA-9280-4F69-99B6-2B0449D33A4D}
+	EndGlobalSection
+EndGlobal
