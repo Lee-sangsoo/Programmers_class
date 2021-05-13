@@ -1,0 +1,4 @@
+﻿  3.cpp
+c:\users\user\desktop\문제\kakao\3\3\3.cpp(22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\문제\kakao\3\3\3.cpp(26): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  3.vcxproj -> C:\Users\user\Desktop\문제\KAKAO\3\Debug\3.exe
