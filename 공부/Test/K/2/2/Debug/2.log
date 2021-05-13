@@ -1,0 +1,5 @@
+﻿  2.cpp
+c:\users\user\desktop\문제\kakao\2\2\2.cpp(85): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\문제\kakao\2\2\2.cpp(86): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\user\desktop\문제\kakao\2\2\2.cpp(88): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  2.vcxproj -> C:\Users\user\Desktop\문제\KAKAO\2\Debug\2.exe
